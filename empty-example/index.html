@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,700i,800,800i,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/slider.css">
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="static/js/sketch.js"></script>
+    <script src="static/js/classes.js"></script>
+    
+    <script type="text/javascript">
+        function disableButton(btn) {
+            document.getElementById(btn.id).disabled = true;
+        }
+    </script>
+
+        <script src="https://kit.fontawesome.com/ed144e8d76.js" crossorigin="anonymous"></script>
+	<title>Science Park</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#"><i class="fas fa-atom"></i>  SPPU</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item ">
+		        <a class="nav-link" href="#">Home </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#Introduction-section">Introduction</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#simulation-section">Simulation</a>
+		      </li>
+		      <li class="nav-item">	
+		        <a class="nav-link" href="#">Test</a>
+		      </li>
+		    </ul>
+		  </div>
+		</div>
+</nav>
+<!-- <div class="jumbotron"> -->
+	<section id="header" class="jumbotron text-center">
+	      	
+	</section>
+	   
+<!-- </div> -->
+<div id="Introduction-section" class="container theory">
+	<h1 style="text-align: center;">Beginner Guide For Electromagnetisam</h1>
+	<h1>Theory</h1>
+	<p>
+		Electromagnetism is a branch of Physics, deals with the electromagnetic force that occurs between electrically charged particles. The electromagnetic force is one of the four fundamental forces and exhibits electromagnetic fields such as magnetic fields, electric fields, and light. It is the basic reason electrons bound to the nucleus and responsible for the complete structure of the nucleus.
+	</p>
+<div class="row">
+	<div class="col-sm-6">
+		<h2>What is Electromagnetic Force?</h2>
+		<p>
+			Electromagnetic force ia a type of physical interaction that occurs between electrically charged particles. It acts between charged particles and is the combination of all magnetic and electrical forces. The electromagnetic force can be attractive or repulsive.<br>
+		Before the invention of electromagnetism, people or scientists used to think electricity and magnetism are two different topics. The view has changed after James Clerk Maxwell published A Treatise on Electricity and Magnetism in the year 1873. The publication states that the interaction of positive and negative charges are mediated by one force.
+		</p>
+	</div>
+	<div class="col-sm-6">
+		<img src="static/img1.png">
+	</div>
+</div>
+<br>
+	<p>
+	<b>Coulomb's law</b>, or Coulomb's inverse-square law, is an experimental law of physics that quantifies the amount of force between two stationary, electrically charged particles. The electric force between charged bodies at rest is conventionally called electrostatic force or <b>Coulomb force</b>.
+	</p>
+	<p>
+		<b>Definition of Coulomb’s Law:</b> The magnitude of the electrostatic force of attraction or repulsion between two point charges is directly proportional to the product of the magnitudes of charges and inversely proportional to the square of the distance between them. The force is along the straight line joining them. If the two charges have the same sign, the electrostatic force between them is repulsive; if they have different signs, the force between them is attractive.<br>
+	</p>
+	<p>
+	<div id="image_eq">
+		<img src="static/charges.png">
+	</div>
+	</p>
+    <p>
+        <h5>Formula: <img src="static/formula1.JPG"></h5>
+    </p>
+    <p>
+        <br>
+        <h4>Key Points about the Law:<br></h4>
+        <br>
+        <ol type="1">
+            <li>The law was first published in 1785 by French physicist Charles-Augustin de Coulomb, and was essential to the development of the theory of electromagnetism, maybe even its starting point because it was now possible to discuss quantity of electric charge in a meaningful way.</li>
+
+            <li>q1 and q2 are the signed magnitudes of the charges, and the scalar r is the distance between the charges. The force of the interaction between the charges is attractive if the charges have opposite signs (i.e., F is negative) and repulsive if like-signed (i.e., F is positive).</li>
+
+            <li>Being an inverse-square law, the law is analogous to Isaac Newton's inverse-square law of universal gravitation, but gravitational forces are always attractive, while electrostatic forces can be attractive or repulsive. </li>
+
+            <li>Coulomb's law can be used to derive Gauss's law, and vice versa. In the case of a single stationary point charge, the two laws are equivalent, expressing the same physical law in different ways. </li>
+
+            <li>The law has been tested extensively, and observations have upheld the law on a scale from 10−16 m to 108 m.</li>
+        </ol>
+        <br>
+        <br>
+    </p>
+
+
+
+</div>
+
+<div id="simulation-section" class="simulation">
+	<div class="container">
+    <h1 style="text-align: center;">Beginner Guide For Electromagnetisam</h1>
+        <p class="inJumboP">Please enter 2 charge values and see the motion of those charges on the right
+            side panel of the screen </p>
+    
+    <!-- <div class="canvas-container visible-md visible-lg"> -->
+        <div id="jumbo-canvas" class="col-sm-6"></div>
+    <!-- </div> -->
+
+    <div class="row">
+        <div id="controls" class="col-md-5">
+            <label>Charge 1:</label>
+            <div class="slidecontainer">
+                <input type="range" min="-100" max="100" value="0" class="slider" id="myRange">
+                <p>Value: <span id="demo"></span> &micro;C</p>
+            </div>
+
+            <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+
+                slider.oninput = function () {
+                    output.innerHTML = this.value;
+                }
+            </script>
+
+            <label>Charge 2:</label>
+            <div class="slidecontainer">
+                <input type="range" min="-100" max="100" value="0" class="slider" id="myRange1">
+                <p>Value: <span id="demo1"></span> &micro;C</p>
+            </div>
+            <script>
+                var slider1 = document.getElementById("myRange1");
+                var output1 = document.getElementById("demo1");
+                output1.innerHTML = slider1.value;
+
+                slider1.oninput = function () {
+                    output1.innerHTML = this.value;
+                }
+            </script>
+
+        </div>
+
+        <div id="output" class="col-md-6">
+            <form>
+                <div class="form-group text-center">
+                    <label>Distance:</label>
+                    <input type="distance" id="distance" class="change" readonly>
+                    <label>Force :</label>
+                    <input type="force" id="force" class="change" readonly>
+                </div>
+            </form>
+
+            <div class="text-center buttons">
+                <button type="button" id="btn1" class="btn btn-outline-success"
+                    onclick="disableButton(this); leq()">Check</button>
+                <button type="button" class="btn btn-outline-danger" value="Restart"
+                    onclick="history.go(0)">Restart</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- end of bootstrap js -->
+
+</body>
+</html>

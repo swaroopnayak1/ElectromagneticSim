@@ -1,0 +1,130 @@
+html {
+    overflow-x: hidden;
+}
+
+/** Header **/
+header {
+    background-color: #111111;
+    color: #aaaaaa;
+    padding: 10px;
+    line-height: 0.8;
+    padding-top: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.inJumboP {
+    text-align: center;
+    font-style: italic;
+}
+/** Header End **/
+
+/** Body **/
+body {
+    background-color:white;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.canvas-container {
+    background-color: #9b9b9b;
+    color: #aaaaaa;
+    border: 2px solid #aaaaaa;
+    padding: 0px;
+    height: 404px;
+    margin: auto;
+}
+#controls {
+    margin-left: 40px;
+    padding: 10px;
+}
+
+#output {
+    margin: 10px;
+    padding: 10px;
+}
+
+#jumbo-canvas {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbo-canvas {
+    border: 1px #aaaaaa;
+    border-radius: 2px;
+}
+
+.chargeInput1{
+	margin-bottom: 25px;
+	width: 500px;
+}
+.chargeInput2{
+	margin-bottom: 25px;
+	width: 500px;
+}
+.inJumboH1{
+	margin-bottom: 10px;
+}
+.inJumboP{
+	margin-bottom: 10px;
+}
+
+.change {
+    background-color: #111111;
+    color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+    width: 100px;
+    padding:5px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#output {
+    margin: 25px 0 0 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+#btn1 {
+    margin-right: 40px;
+}
+
+
+/** Body End**/
+
+
+
+
+.jumbotron-size{
+    height: auto;
+}
+
+.theory{
+    font-family: 'Raleway';
+}
+#header{
+    /*background:url("static/header.jpg");*/
+    background-image: url("../header.jpg");
+
+  /* Full height */
+  height: 665px;
+  width: auto;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#image_eq{
+text-align: center;
+}
